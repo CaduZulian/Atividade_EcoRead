@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Splash theme. -->
+    <style name="Splash.Theme.Atividade_EcoRead" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/layout_primary</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Atividade_EcoRead" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Atividade_EcoRead" parent="Splash.Theme.Atividade_EcoRead" />
+</resources>
