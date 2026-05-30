@@ -1,15 +1,39 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Splash theme. -->
-    <style name="Splash.Theme.Atividade_EcoRead" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@color/layout_primary</item>
-
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.Atividade_EcoRead</item>
     </style>
 
     <!-- Base application theme. -->
     <style name="Base.Theme.Atividade_EcoRead" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
     </style>
 
-    <style name="Theme.Atividade_EcoRead" parent="Splash.Theme.Atividade_EcoRead" />
+    <style name="Theme.Atividade_EcoRead" parent="Base.Theme.Atividade_EcoRead" />
+
+    <!-- Button Styles -->
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.App.Button.Neutral" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/neutral_button_bg</item>
+        <item name="android:textColor">@color/neutral_button_on_bg</item>
+    </style>
+
+    <!-- TextField Style -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="hintTextColor">@color/input_stroke</item>
+    </style>
 </resources>

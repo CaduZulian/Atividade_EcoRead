@@ -7,20 +7,27 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="EcoRead"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Atividade_EcoRead">
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.ecoread.activity.MainActivity"
             android:exported="true"
-            android:theme="@style/Splash.Theme.Atividade_EcoRead">
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.ecoread.activity.CadastroProprietarioActivity" />
+        <activity android:name="com.ecoread.activity.CadastroApartamentoActivity" />
+        <activity android:name="com.ecoread.activity.RegistroLeituraActivity" />
+        <activity android:name="com.ecoread.activity.ConsultaMediaActivity" />
+        <activity android:name="com.ecoread.activity.ConsultaMesActivity" />
+
     </application>
 
 </manifest>
